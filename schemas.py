@@ -1,4 +1,17 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+
+
+class TextRequest(BaseModel):
+    text: str = Field(min_length=1)
+
+
+class QuestionRequest(BaseModel):
+    question: str = Field(min_length=1)
+
+
+class SearchRequest(BaseModel):
+    search_query: str = Field(min_length=1)
+
 
 class CalendarEvent(BaseModel):
     name: str
