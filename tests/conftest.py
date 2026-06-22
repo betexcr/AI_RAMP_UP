@@ -1,8 +1,6 @@
 import pytest
 from unittest.mock import MagicMock, patch
 
-from schemas import Weather
-
 
 @pytest.fixture
 def mock_openai_client():
