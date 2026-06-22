@@ -17,6 +17,9 @@ class MathReasoning(BaseModel):
 
 class Weather(BaseModel):
     location: str
+    latitude: float
+    longitude: float
+    geocoder: str
     units: str
     temperature: float
     description: str

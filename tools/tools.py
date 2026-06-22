@@ -29,7 +29,10 @@ tools = [
                 "location": {
                     "type": ["string", "null"],
                     "description": (
-                        "City and country e.g. Bogotá, Colombia. "
+                        "Comma-separated place hierarchy, smallest to largest, "
+                        "ending with country. Examples: 'Costa Rica'; "
+                        "'Cartago, Costa Rica'; 'Turrialba, Cartago, Costa Rica'; "
+                        "'Santa Cruz, Turrialba, Cartago, Costa Rica'. "
                         "Use null when querying by coordinates."
                     ),
                 },
